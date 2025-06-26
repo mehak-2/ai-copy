@@ -11,7 +11,7 @@ const Webinar = () => {
   const percentFilled = Math.round((attendees / capacity) * 100);
 
   return (
-    <div className="flex flex-col-reverse lg:flex-row gap-8 bg-white dark:bg-gray-900 rounded-2xl shadow-xl  max-w-7xl mx-auto px-6 lg:px-8 py-8  mt-12">
+    <div className="flex flex-col-reverse mb-4 lg:flex-row gap-8 bg-white dark:bg-gray-900 rounded-2xl shadow-xl  max-w-7xl mx-auto px-6 lg:px-8 py-8  mt-4">
       {/* Left: Event Details */}
       <div className="flex-1 ">
         {/* Badges */}
@@ -62,7 +62,7 @@ const Webinar = () => {
           
         </div>
         {/* Registration Progress */}
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <div className="flex items-center justify-between mb-1">
             <span className="text-sm text-gray-900 dark:text-gray-200 font-medium">Registration Progress</span>
             <span className="text-xs text-gray-700 dark:text-gray-300">{percentFilled}% filled</span>
@@ -70,7 +70,7 @@ const Webinar = () => {
           <div className="w-full h-2 bg-gray-300 dark:bg-gray-700 rounded-full overflow-hidden">
             <div className="h-2 bg-blue-600 dark:bg-blue-400 rounded-full transition-all duration-300" style={{ width: `${percentFilled}%` }}></div>
           </div>
-        </div>
+        </div> */}
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 mt-6">
           <Link

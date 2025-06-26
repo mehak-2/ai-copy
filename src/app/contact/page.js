@@ -61,7 +61,7 @@ export default function ContactPage() {
         },
         {
             question: "What is the accessibility widget?",
-            answer: "The accessibility widget is a built-in tool designed to enhance the browsing experience for users with diverse needs. Included in all subscription plans, it not only improves usability but also offers AI-powered monitoring to track accessibility performance over time — helping you maintain an inclusive digital experience."
+            answer: "The accessibility widget is a built-in tool designed to enhance the browsing experience for users with diverse needs. Included in all subscription plans  but it is free for 1 month, it not only improves usability but also offers AI-powered monitoring to track accessibility performance over time — helping you maintain an inclusive digital experience."
         },
         {
             question: "Do I need technical knowledge to use Axto.ai?",
@@ -70,11 +70,7 @@ export default function ContactPage() {
         {
             question: "Is this tool only for large companies?",
             answer: "No. Axto.ai is built for businesses of all sizes — from startups to enterprises — and scales according to your needs."
-        },
-        {
-            question: "Is the audit report downloadable for free?",
-            answer: "The downloadable audit report is only available with a subscription plan. Similarly, access to the accessibility widget is also included in subscription plans."
-        },
+        }
     ]
 
     const toggleFaq = (index) => {

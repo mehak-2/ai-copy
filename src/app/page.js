@@ -7,6 +7,7 @@ import {
     TrendingUp
 } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const BlogCardHome = dynamic(() => import('@/components/BlogCardHome'));
 const FeaturesSection = dynamic(() => import('@/components/FeaturesSection'));
@@ -58,12 +59,12 @@ export default async function Home() {
     }
 
     return (
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+        <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors duration-200">
          
             <Header /> 
           
 
-            <section className="relative min-h-screen flex mt-28 md:mt-16 lg:mt-24 items-center justify-center overflow-hidden pb-10">
+            <section className="relative min-h-screen flex mt-28 md:mt-16 lg:mt-24 items-center justify-center overflow-hidden py-10">
                 {/* Animated Background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900">
                     {/* Animated gradient orbs */}
@@ -78,9 +79,9 @@ export default async function Home() {
                 <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20">
                     <div className="text-center max-w-5xl mx-auto">
                         {/* Badge */}
-                        <div className="inline-flex items-center gap-2 bg-white/80 dark:bg-gray-800 border border-white/40 dark:border-gray-700 rounded-full px-6 py-2 mb-8 animate-fade-in hover:bg-white/90 dark:hover:bg-gray-700 transition-all duration-300 cursor-default">
-                            <Sparkles className="w-4 h-4 text-purple-700 dark:text-purple-300 animate-pulse" />
-                            <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
+                        <div className="inline-flex items-center gap-2 bg-white/20 dark:bg-gray-900/60 backdrop-blur-sm border border-white/30 dark:border-gray-800/60 rounded-full px-6 py-2 mb-8 animate-fade-in hover:bg-white/30 dark:hover:bg-gray-900/80 transition-all duration-300 cursor-default">
+                            <Sparkles className="w-4 h-4 text-purple-500 animate-pulse" />
+                            <span className="text-sm font-medium text-gray-900 dark:text-white">
                                 AI-Powered EAA Scanner
                             </span>
                         </div>
@@ -89,14 +90,14 @@ export default async function Home() {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in-up">
                            <span className="block text-gray-900 dark:text-white mb-2">
   Avoid Fines Upto{' '}
-  <span className="font-bold text-red-700 dark:text-red-400">€100,000</span>
+  <span className="font-bold text-red-600">€100,000</span>
 </span>
-                            <span className="block text-blue-700 dark:text-blue-300 font-extrabold">
+                            <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-extrabold">
                                 Instantly Detect & Fix
                             </span>
                             <span className="block text-gray-900 dark:text-white mt-2">
                                 
-                                <span className="text-emerald-700 dark:text-emerald-300 font-extrabold">
+                                <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-extrabold">
                                     EU Accessibility Violations
                                 </span>{' '}
  
@@ -107,7 +108,7 @@ export default async function Home() {
                         
 
                         {/* Compliance Standards Line */}
-                        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300 font-medium">
+                        <p className="text-lg md:text-xl text-gray-900 dark:text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300 font-medium">
                             Scan your website for{' '}
                             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-semibold">
                                 WCAG 2.2
@@ -142,7 +143,7 @@ export default async function Home() {
 
                             <Link
                                 href="/about"
-                                className="group relative inline-flex items-center justify-center gap-3 bg-white/10 dark:bg-gray-800/50 backdrop-blur-sm border border-white/20 dark:border-gray-700/50 text-gray-900 dark:text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/20 dark:hover:bg-gray-700/60 hover:border-white/30 dark:hover:border-gray-600/60 transform hover:scale-[1.02] transition-all duration-300"
+                                className="group relative inline-flex items-center justify-center gap-3 bg-white/20 dark:bg-gray-900/60 backdrop-blur-sm border border-white/30 dark:border-gray-800/60 text-gray-900 dark:text-gray-100 font-semibold px-8 py-4 rounded-xl hover:bg-white/30 dark:hover:bg-gray-900/80 hover:border-white/40 dark:hover:border-gray-700/70 transform hover:scale-[1.02] transition-all duration-300"
                             >
                                 <TrendingUp className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                                 <span>Get Full Access</span>
@@ -175,36 +176,39 @@ export default async function Home() {
                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-10 animate-fade-in-up">
   {/* Scan Card */}
   <div className="relative bg-gradient-to-br from-blue-100 via-white to-cyan-100 dark:from-gray-800 dark:via-gray-900 dark:to-blue-900 rounded-2xl shadow-lg p-4 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-    <Sparkles className="w-8 h-8 text-blue-700 dark:text-blue-300 mb-2 animate-pulse" />
-    <h2 className="text-base font-semibold mb-1 text-gray-900 dark:text-white tracking-wide">Scan</h2>
-    <div className="text-[11px] text-gray-900 dark:text-gray-100 mb-0.5 font-medium tracking-tight">Websites Analyzed</div>
-    <div className="text-xl font-bold text-blue-900 dark:text-blue-200 transition-transform duration-300 group-hover:scale-110">10K+</div>
+    <Sparkles className="w-8 h-8 text-blue-600 mb-2 animate-pulse" />
+    <h2 className="text-base font-semibold mb-1 text-gray-900 dark:text-gray-100 tracking-wide">Scan</h2>
+    <div className="text-[11px] text-gray-900 dark:text-gray-300 mb-0.5 font-medium tracking-tight">Websites Analyzed</div>
+    <div className="text-xl font-bold text-blue-800 dark:text-blue-200 transition-transform duration-300 group-hover:scale-110">10K+</div>
   </div>
 
   {/* Detect Card */}
   <div className="relative bg-gradient-to-br from-purple-100 via-white to-pink-100 dark:from-gray-800 dark:via-gray-900 dark:to-purple-900 rounded-2xl shadow-lg p-4 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-    <Target className="w-8 h-8 text-purple-700 dark:text-purple-300 mb-2 animate-bounce" />
-    <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-1 tracking-wide">Detect</h2>
-    <div className="text-[11px] text-gray-900 dark:text-gray-100 mb-0.5 font-medium tracking-tight">AI Monitoring</div>
-    <div className="text-xl font-bold text-purple-900 dark:text-purple-200 transition-transform duration-300 group-hover:scale-110">24/7</div>
+    <Target className="w-8 h-8 text-purple-600 mb-2 animate-bounce" />
+    <h2 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-1 tracking-wide">Detect</h2>
+    <div className="text-[11px] text-gray-900 dark:text-gray-300 mb-0.5 font-medium tracking-tight">AI Monitoring</div>
+    <div className="text-xl font-bold text-purple-800 dark:text-purple-200 transition-transform duration-300 group-hover:scale-110">24/7</div>
   </div>
 
   {/* Solution Card */}
   <div className="relative bg-gradient-to-br from-green-100 via-white to-blue-100 dark:from-gray-800 dark:via-gray-900 dark:to-emerald-900 rounded-2xl shadow-lg p-4 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-    <TrendingUp className="w-8 h-8 text-emerald-700 dark:text-emerald-300 mb-2 animate-pulse" />
-    <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-1 tracking-wide">Solution</h2>
-    <div className="text-[11px] text-gray-900 dark:text-gray-100 mb-0.5 font-medium tracking-tight">Client Satisfaction</div>
-    <div className="text-xl font-bold text-emerald-900 dark:text-emerald-200 transition-transform duration-300 group-hover:scale-110">100%</div>
+    <TrendingUp className="w-8 h-8 text-emerald-600 mb-2 animate-pulse" />
+    <h2 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-1 tracking-wide">Solution</h2>
+    <div className="text-[11px] text-gray-900 dark:text-gray-300 mb-0.5 font-medium tracking-tight">Client Satisfaction</div>
+    <div className="text-xl font-bold text-emerald-800 dark:text-emerald-200 transition-transform duration-300 group-hover:scale-110">100%</div>
   </div>
 
   {/* Solve Card */}
   <div className="relative bg-gradient-to-br from-pink-100 via-white to-red-100 dark:from-gray-800 dark:via-gray-900 dark:to-pink-900 rounded-2xl shadow-lg p-4 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-xl animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-    <ArrowRight className="w-8 h-8 text-pink-700 dark:text-pink-300 mb-2 animate-bounce" />
-    <h2 className="text-base font-semibold text-gray-900 dark:text-white mb-1 tracking-wide">Solve</h2>
-    <div className="text-[11px] text-gray-900 dark:text-gray-100 mb-0.5 font-medium tracking-tight">Expert Developers</div>
-    <div className="text-xl font-bold text-pink-900 dark:text-pink-200 transition-transform duration-300 group-hover:scale-110">200+</div>
+    <ArrowRight className="w-8 h-8 text-pink-600 mb-2 animate-bounce" />
+    <h2 className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-1 tracking-wide">Solve</h2>
+    <div className="text-[11px] text-gray-900 dark:text-gray-300 mb-0.5 font-medium tracking-tight">Expert Developers</div>
+    <div className="text-xl font-bold text-pink-800 dark:text-pink-200 transition-transform duration-300 group-hover:scale-110">200+</div>
   </div>
 </div>
+
+{/* Our Developer Partners Section */}
+
 
 
 
@@ -237,20 +241,56 @@ export default async function Home() {
             
             {/* Logo Marquee Section */}
             <LogoMarquee />
+            
+            
             <RealUserTestimonial />
+            <section className="py-8  dark:from-gray-950 dark:via-gray-900 dark:to-purple-950">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-12 text-center tracking-tight drop-shadow-lg">
+      Our Development Partners
+    </h2>
+    <div className="flex justify-center">
+      <div className="relative max-w-7xl w-full rounded-3xl p-1 bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400 shadow-2xl hover:shadow-purple-400/30 transition-shadow duration-500 animate-fade-in-up">
+        <div className="relative z-10 flex flex-col items-center text-center rounded-3xl bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl p-10 md:p-12 border border-white/30 dark:border-gray-800/60">
+          {/* Animated Glow Behind Logo */}
+          <span className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400 rounded-full blur-2xl opacity-30 animate-pulse pointer-events-none" />
+          {/* Logo */}
+          <div className="relative mb-6">
+            <Image
+              src="/darkFullLogo-Dy9Xa75p.webp"
+              alt="Maxtron Innovations Logo"
+              width={96}
+              height={96}
+              className="rounded-full border-4 border-white  shadow-lg object-contain bg-white p-2 "
+              priority
+            />
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 tracking-tight drop-shadow-sm">
+            Maxtron Innovations
+          </h3>
+          <p className="text-lg text-gray-700 dark:text-gray-300 font-medium mb-0 max-w-xs mx-auto">
+            Transform Your Business and Growth with <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold">360° Cutting-Edge Tech Solutions</span>
+          </p>
+        </div>
+        {/* Glassmorphism border shine */}
+        <span className="absolute inset-0 rounded-3xl border-2 border-white/30 dark:border-gray-800/60 pointer-events-none" style={{boxShadow: '0 4px 32px 0 rgba(80,0,200,0.10)'}} />
+      </div>
+    </div>
+  </div>
+</section>
 
             {/* Blog Section - Enhanced with Real API Data */}
             <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900/20" id="blog">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center gap-2 bg-primary-200 dark:bg-primary-900 rounded-full px-4 py-2 mb-6">
-                            <FileText className="w-4 h-4 text-primary-800 dark:text-primary-200" />
-                            <span className="text-sm font-medium text-primary-900 dark:text-primary-100">Latest Insights</span>
+                        <div className="inline-flex items-center gap-2 bg-primary-100 dark:bg-primary-900/40 rounded-full px-4 py-2 mb-6">
+                            <FileText className="w-4 h-4 text-primary-700 dark:text-primary-200" />
+                            <span className="text-sm font-medium text-primary-800 dark:text-primary-200">Latest Insights</span>
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
                             Expert Web Optimization Tips
                         </h2>
-                        <p className="text-xl text-gray-800 dark:text-gray-100 max-w-2xl mx-auto">
+                        <p className="text-xl text-gray-900 dark:text-gray-100 max-w-2xl mx-auto">
                             Stay ahead with the latest accessibility insights, compliance tips, and web optimization strategies
                         </p>
                     </div>
@@ -274,13 +314,13 @@ export default async function Home() {
                     ) : (
                         // Fallback content when no blogs are available
                         <div className="text-center py-12">
-                            <div className="w-16 h-16 bg-primary-200 dark:bg-primary-900 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <FileText className="w-8 h-8 text-primary-900 dark:text-primary-100" />
+                            <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900/40 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                                <FileText className="w-8 h-8 text-primary-700 dark:text-primary-200" />
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
                                 New Articles Coming Soon
                             </h3>
-                            <p className="text-gray-900 dark:text-gray-100 max-w-md mx-auto mb-8">
+                            <p className="text-gray-900 dark:text-gray-300 max-w-md mx-auto mb-8">
                                 We're preparing expert insights on web accessibility and EU compliance. Check back soon for the latest updates.
                             </p>
                             <Link href="/blog" className="btn-primary group">

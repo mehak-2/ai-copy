@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { AlertTriangle, ArrowRight, Clock } from 'lucide-react'
-import Link from 'next/link'
+import {   Clock } from 'lucide-react'
+
 
 export default function CountdownTimer() {
     const [timeLeft, setTimeLeft] = useState({
@@ -48,7 +48,7 @@ export default function CountdownTimer() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full max-w-4xl mx-auto p-8 bg-gradient-to-br mb-[100px] from-red-50 via-white to-red-50 dark:from-red-950/30 dark:via-gray-900 dark:to-red-950/30 rounded-2xl shadow-xl border border-red-100 dark:border-red-900/50 backdrop-blur-sm relative overflow-hidden"
+            className="w-full max-w-4xl mx-auto p-8 bg-gradient-to-br mb-[100px] from-red-50 via-white to-red-50 dark:from-red-950/30 dark:via-gray-900 dark:to-red-950/30 rounded-2xl shadow-xl border border-red-100 dark:border-red-900/50 backdrop-blur-sm relative overflow-hidden mt-8"
         >
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden">

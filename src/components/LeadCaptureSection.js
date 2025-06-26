@@ -93,7 +93,7 @@ const LeadCaptureSection = () => {
                             variants={itemVariants}
                             className="text-base text-gray-800 dark:text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed font-light"
                         >
-                         Get in-depth performance, accessibility, and SEO insights — delivered instantly to your inbox
+                         Get in-depth performance, accessibility, and SEO insights - delivered instantly to your inbox
                         </motion.p>
 
                         {/* Form Container with Layout Animation */}
@@ -163,11 +163,11 @@ const LeadCaptureSection = () => {
                         {!isSubmitted && (
                             <motion.div
                                 variants={itemVariants}
-                                className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-gray-500 dark:text-gray-500"
+                                className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500 dark:text-gray-500"
                             >
                                 <div className="flex items-center gap-1.5">
                                     <div className="w-1 h-1 bg-green-500 rounded-full"></div>
-                                    <span>Includes 5 free credits — each credit lets you audit one web page at a time.</span>
+                                    <span>Kickstart your journey with one month of free credits</span>
                                 </div>
                                
                                

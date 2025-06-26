@@ -1,7 +1,7 @@
 import React from 'react'
 
 const RealUserTestimonial = () => (
-  <section className="py-3 md:py-4 lg:py-5 bg-white dark:bg-gray-900">
+  <section className="py-3 md:py-4 lg:py-5 ">
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <div className="rounded-xl border border-gray-300 dark:border-gray-600 bg-white/90 dark:bg-gray-900/80 backdrop-blur-sm px-6 py-5 md:py-7 shadow-sm flex items-center justify-center">

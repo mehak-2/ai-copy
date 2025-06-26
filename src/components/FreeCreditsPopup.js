@@ -25,38 +25,25 @@ const FreeCreditsPopup = () => {
   }
 
   return (
-    <div className={`fixed bottom-4 left-4 right-4 sm:right-auto sm:left-5 sm:bottom-5 bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg z-50 max-w-full sm:max-w-sm ${(user?.subscription === "FREE" || !user) ? "opacity-100" : "opacity-0 display-none"}`}>
+    <div className={`fixed bottom-4 left-4 right-4 sm:right-auto sm:left-5 sm:bottom-5 bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg z-50 max-w-full sm:max-w-sm  ${( !user) ? "opacity-100" : "opacity-0 display-none"} `}>
       <div className="flex items-start">
         <div className="flex-shrink-0">
           <Image src="/logo.png" alt="Logo" width={32} height={32}  />
         </div>
         <div className="ml-3 sm:ml-4 flex-grow">
-          <h3 className="font-bold text-base sm:text-lg text-gray-900 dark:text-white">You have {Number.isNaN(5 - user?.usedAuditCredit) ? 5 : 5 - user?.usedAuditCredit} {" "}
- free credits!</h3>
-          <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 mt-1 mb-2">
-            Each credit lets you audit one web page at a time.
-          </p>
-          {((typeof (5 - user?.usedAuditCredit) === 'number') && (5 - user?.usedAuditCredit) === 0) ? (
-            <Link
-              href="https://app.axto.ai/upgrade"
-              className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg sm:rounded-xl shadow-2xl hover:shadow-purple-500/30 transform hover:scale-[1.0] transition-all duration-300 overflow-hidden text-xs sm:text-sm"
-            >
-              <span className="relative z-20">Upgrade Plan</span>
-              <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-20" />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 ease-in-out"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-            </Link>
-          ) : (
+          <h3 className="font-bold text-xs sm:text-base text-gray-900 dark:text-white">Join now and get one month of credits - completely free</h3>
+         
+     
             <Link
               href={`${process.env.NEXT_PUBLIC_FREE_AUDIT}`}
-              className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg sm:rounded-xl shadow-2xl hover:shadow-purple-500/30 transform hover:scale-[1.0] transition-all duration-300 overflow-hidden text-xs sm:text-sm"
+              className="group relative inline-flex items-center justify-center gap-2 sm:gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg sm:rounded-xl shadow-2xl hover:shadow-purple-500/30 transform hover:scale-[1.0] transition-all duration-300 mt-2 overflow-hidden text-xs sm:text-sm"
             >
               <span className="relative z-20">Start Audit</span>
               <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-20" />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -skew-x-12 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700 ease-in-out"></div>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </Link>
-          )}
+          
         </div>
         <button
           onClick={() => setIsOpen(false)}

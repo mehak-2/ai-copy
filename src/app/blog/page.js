@@ -149,7 +149,7 @@ export default async function BlogPage({ searchParams }) {
                         </p>
                     </div>
 
-                    <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">Featured Post</h2>
+                    {/* <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">Featured Post</h2> */}
 
                     <Suspense fallback={<BlogLoading />}>
                         <BlogContent initialSearch={search} initialPage={page} />
@@ -157,7 +157,7 @@ export default async function BlogPage({ searchParams }) {
 
                     {/* Newsletter Signup */}
                     <div className="mt-16 text-center">
-                        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">Newsletter Signup</h2>
+                        {/* <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">Newsletter Signup</h2> */}
                         <div className="card max-w-2xl mx-auto bg-gradient-to-r from-primary-50 dark:from-primary-900/20 to-purple-50 dark:to-purple-900/20">
                             <NewsletterForm
                                 title="Stay Updated"

@@ -21,8 +21,8 @@ const FeaturesSection = () => {
         {
             icon: <Shield className="w-6 h-6" />,
             title: "Instant Accessibility Check",
-            description: "Enter your website domain — Axto.ai instantly scans for EAA & WCAG 2.2 compliance, giving you a detailed report, accessibility widget",
-            detailedDescription: "Just enter your website domain — Axto.ai instantly audits your site for EAA and WCAG 2.2 standards using our AI-powered scanner. Alongside your detailed results, you'll receive a downloadable compliance report, an embeddable accessibility widget, and an auto-generated Accessibility Statement — so you can fix issues fast",
+            description: "Enter your website domain - Axto.ai instantly scans for EAA & WCAG 2.2 compliance, giving you a detailed report, accessibility widget",
+            detailedDescription: "Just enter your website domain - Axto.ai instantly audits your site for EAA and WCAG 2.2 standards using our AI-powered scanner. Alongside your detailed results, you'll receive a downloadable compliance report, an embeddable accessibility widget, and an auto-generated Accessibility Statement - so you can fix issues fast",
             points:"What's Included",
             linkName:"Try this feature",
             linkaddress:"https://app.axto.ai/audit",
@@ -39,8 +39,8 @@ const FeaturesSection = () => {
         {
             icon: <Zap className="w-6 h-6" />,
             title: "Accessible Marketing Content",
-            description: "Axto.ai ensures all your marketing content — from visuals to videos — meets accessibility standards, helping you reach and engage a wider audience",
-            detailedDescription: "Accessibility goes beyond code. Axto.ai helps you make your entire marketing presence more inclusive by scanning for key issues across media, including video captions, transcripts, image text, and language support. We make it easy to spot what needs to be improved — so everyone can engage with your brand",
+            description: "Axto.ai ensures all your marketing content from visuals to videos meets accessibility standards, helping you reach and engage a wider audience",
+            detailedDescription: "Accessibility goes beyond code. Axto.ai helps you make your entire marketing presence more inclusive by scanning for key issues across media, including video captions, transcripts, image text, and language support. We make it easy to spot what needs to be improved, so everyone can engage with your brand",
             points:"What We Support",
              linkName:"Try this service",
             linkaddress:"/contact",
@@ -57,9 +57,9 @@ const FeaturesSection = () => {
         {
             icon: <Search className="w-6 h-6" />,
             title: "How Axto.ai Works",
-            description: "From scan to solution — compliance, simplified. Scan → Report → Fixes by development team → Widge",
-            detailedDescription: "Axto.ai simplifies accessibility for every team. Start with an instant scan, receive a code-mapped audit report, auto-generate your accessibility statement, and improve usability with our front-end widget. Whether you implement fixes yourself or get support from our dev team, you're covered at every step —  technically, and practically",
-            points:"From scan to solution — compliance, simplified",
+            description: "From scan to solution - compliance, simplified. Scan → Report → Fixes by development team → Widget",
+            detailedDescription: "Axto.ai simplifies accessibility for every team. Start with an instant scan, receive a code-mapped audit report, auto-generate your accessibility statement, and improve usability with our front-end widget. Whether you implement fixes yourself or get support from our dev team, you're covered at every step -  technically, and practically",
+            points:"From scan to solution - compliance, simplified",
             linkName:"Try this feature",
             linkaddress:"https://app.axto.ai/audit",
             benefits: [
@@ -96,7 +96,7 @@ const FeaturesSection = () => {
               linkName:"Try this feature",
             linkaddress:"https://app.axto.ai/audit",
             benefits: [
-                "eCommerce & Retail – Fix checkout and navigation for all customers",
+                "Ecommerce & Retail – Fix checkout and navigation for all customers",
                 "Banking ,Healthcare & Fintech – Secure, inclusive platforms with full documentation",
               
                 "EdTech – Create inclusive learning across all devices" ],
@@ -106,7 +106,7 @@ const FeaturesSection = () => {
         {
             icon: <BarChart3 className="w-6 h-6" />,
             title: "Benefits of EAA Compliance",
-            description: "Accessibility isn't just a requirement — it's a competitive advantage",
+            description: "Accessibility isn't just a requirement - it's a competitive advantage",
             detailedDescription: "Earn user trust • Expand your reach • Improve site performance. Every plan includes an Accessibility Report, Support Widget, and Statement Generator",
             points:"Why It Matters",
               linkName:"Try this feature",
