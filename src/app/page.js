@@ -81,27 +81,29 @@ export default async function Home() {
                         {/* Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/20 dark:bg-gray-900/60 backdrop-blur-sm border border-white/30 dark:border-gray-800/60 rounded-full px-6 py-2 mb-8 animate-fade-in hover:bg-white/30 dark:hover:bg-gray-900/80 transition-all duration-300 cursor-default">
                             <Sparkles className="w-4 h-4 text-purple-500 animate-pulse" />
-                            <span className="text-sm font-medium text-gray-900 dark:text-white">
-                                AI-Powered EAA Scanner
-                            </span>
+                            <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
+  AI-Powered EAA Scanner
+</span>
+
                         </div>
  
                         {/* Main Heading with Animated Gradients */}
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight animate-fade-in-up">
-                           <span className="block text-gray-900 dark:text-white mb-2">
+                        <span className="block text-gray-900 dark:text-white mb-2">
   Avoid Fines Upto{' '}
-  <span className="font-bold text-red-600">€100,000</span>
+  <span className="font-bold text-red-700">€100,000</span>
 </span>
-                            <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-extrabold">
-                                Instantly Detect & Fix
-                            </span>
-                            <span className="block text-gray-900 dark:text-white mt-2">
-                                
-                                <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-extrabold">
-                                    EU Accessibility Violations
-                                </span>{' '}
- 
-                            </span>
+
+<span className="block bg-gradient-to-r from-blue-700 via-purple-700 to-pink-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-extrabold text-xl">
+  Instantly Detect & Fix
+</span>
+
+<span className="block text-gray-900 dark:text-white mt-2">
+  <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-extrabold text-xl">
+    EU Accessibility Violations
+  </span>
+</span>
+
                         </h1>
 
                         {/* Subtitle */}
@@ -110,17 +112,18 @@ export default async function Home() {
                         {/* Compliance Standards Line */}
                         <p className="text-lg md:text-xl text-gray-900 dark:text-gray-100 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-300 font-medium">
                             Scan your website for{' '}
-                            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-semibold">
-                                WCAG 2.2
-                            </span>
-                            ,{' '}
-                            <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-semibold">
-                                EN 301 549
-                            </span>
-                            , and{' '}
-                            <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent animate-gradient-x bg-300% font-semibold">
-                                WSG 1.0
-                            </span>
+                            <span className="text-lg font-extrabold bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 bg-clip-text text-transparent animate-gradient-x bg-300%">
+  WCAG 2.2
+</span>
+,{' '}
+<span className="text-lg font-extrabold bg-gradient-to-r from-emerald-600 via-blue-700 to-purple-700 bg-clip-text text-transparent animate-gradient-x bg-300%">
+  EN 301 549
+</span>
+, and{' '}
+<span className="text-lg font-extrabold bg-gradient-to-r from-purple-700 via-pink-700 to-red-700 bg-clip-text text-transparent animate-gradient-x bg-300%">
+  WSG 1.0
+</span>
+
                             {' '}compliance!
                         </p>
 
@@ -131,7 +134,9 @@ export default async function Home() {
                                 className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-2xl hover:shadow-purple-500/30 transform hover:scale-[1.02] transition-all duration-300 overflow-hidden"
                             >
                                 <Target className="w-5 h-5 relative z-20" />
-                                <span className="relative z-20">Free EAA Audit</span>
+                                <span className="relative z-20 text-gray-900 dark:text-white">Free EAA Audit</span>
+
+
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300 relative z-20" />
 
                                 {/* Shine effect - Fixed */}
@@ -142,12 +147,14 @@ export default async function Home() {
                             </Link>
 
                             <Link
-                                href="/about"
-                                className="group relative inline-flex items-center justify-center gap-3 bg-white/20 dark:bg-gray-900/60 backdrop-blur-sm border border-white/30 dark:border-gray-800/60 text-gray-900 dark:text-gray-100 font-semibold px-8 py-4 rounded-xl hover:bg-white/30 dark:hover:bg-gray-900/80 hover:border-white/40 dark:hover:border-gray-700/70 transform hover:scale-[1.02] transition-all duration-300"
-                            >
-                                <TrendingUp className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                                <span>Get Full Access</span>
-                            </Link>
+  href="/about"
+  className="group relative inline-flex items-center justify-center gap-3 bg-white dark:bg-gray-900 backdrop-blur-sm border border-gray-300 dark:border-gray-700 text-black dark:text-white font-semibold px-8 py-4 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-600 transform hover:scale-[1.02] transition-all duration-300"
+>
+  <TrendingUp className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+  <span className="text-gray-900 dark:text-white">Get Full Access</span>
+
+</Link>
+
                         </div>
 
                         {/* Animated Card Section: Scan, Detect, Solution, Solve */}
@@ -254,6 +261,7 @@ export default async function Home() {
         <div className="relative z-10 flex flex-col items-center text-center rounded-3xl bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl p-10 md:p-12 border border-white/30 dark:border-gray-800/60">
           {/* Animated Glow Behind Logo */}
           <span className="absolute -top-8 left-1/2 -translate-x-1/2 w-32 h-32 bg-gradient-to-tr from-blue-400 via-purple-400 to-pink-400 rounded-full blur-2xl opacity-30 animate-pulse pointer-events-none" />
+
           {/* Logo */}
           <div className="relative mb-6">
             <Image
@@ -269,11 +277,21 @@ export default async function Home() {
             Maxtron Innovations
           </h3>
           <p className="text-lg text-gray-700 dark:text-gray-300 font-medium mb-0 max-w-xs mx-auto">
-            Transform Your Business and Growth with <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent font-semibold">360° Cutting-Edge Tech Solutions</span>
+            Transform Your Business and Growth with <span className="text-lg font-extrabold bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700 bg-clip-text text-transparent">
+  360° Cutting-Edge Tech Solutions
+</span>
+
+
           </p>
         </div>
         {/* Glassmorphism border shine */}
-        <span className="absolute inset-0 rounded-3xl border-2 border-white/30 dark:border-gray-800/60 pointer-events-none" style={{boxShadow: '0 4px 32px 0 rgba(80,0,200,0.10)'}} />
+        <span
+  aria-hidden="true"
+  className="absolute inset-0 rounded-3xl border-2 border-gray-300 dark:border-gray-700 pointer-events-none"
+  style={{ boxShadow: '0 4px 32px 0 rgba(80, 0, 200, 0.15)' }}
+/>
+
+
       </div>
     </div>
   </div>
@@ -285,7 +303,10 @@ export default async function Home() {
                     <div className="text-center mb-16">
                         <div className="inline-flex items-center gap-2 bg-primary-100 dark:bg-primary-900/40 rounded-full px-4 py-2 mb-6">
                             <FileText className="w-4 h-4 text-primary-700 dark:text-primary-200" />
-                            <span className="text-sm font-medium text-primary-800 dark:text-primary-200">Latest Insights</span>
+                            <span className="text-sm font-medium text-primary-800 dark:text-white">
+  Latest Insights
+</span>
+
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
                             Expert Web Optimization Tips
@@ -304,11 +325,23 @@ export default async function Home() {
                             </div>
 
                             <div className="text-center mt-16">
-                                <Link href="/blog" className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300">
-                                    <FileText className="w-5 h-5" />
-                                    <span>Explore All Articles</span>
-                                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                                </Link>
+                            <Link
+  href="/blog"
+  className="group relative inline-flex items-center justify-center gap-3 
+             bg-gradient-to-r from-indigo-700 to-purple-700 
+             hover:from-indigo-800 hover:to-purple-800 
+             text-white font-semibold px-8 py-4 rounded-xl shadow-lg 
+             hover:shadow-xl transform hover:scale-[1.02] 
+             transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
+>
+  <FileText className="w-5 h-5" />
+  <span className="text-gray-900 dark:text-white">
+  Explore All Articles
+</span>
+
+  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+</Link>
+
                             </div>
                         </>
                     ) : (
